@@ -1,11 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+//  PRIMARY BLUES
+
+//intro and email sign up background
+$darkBlueIntroAndEmail : hsl(217, 28%, 15%);
+//main background
+$darkBlueMain : hsl(218, 28%, 13%);
+//footer background
+$darkBlueFooter : hsl(216, 53%, 9%);
+//testimonials background
+$darkBlue : hsl(219, 30%, 18%);
+
+// ACCENT 
+
+//inside call-to-action gradient
+$cyan : hsl(176, 68%, 64%);
+//inside call-to-action gradient
+$blue : hsl(198, 60%, 50%);
+//error
+$lightRedError : hsl(0, 100%, 63%);
+
+//White
+$white: hsl(0, 0%, 100%);
+
+$defaultFontSize: 0.875rem;
+
+// Headings, Call-to-actions, Header Navigation (https://fonts.google.com/specimen/Raleway);
+$family1: "Raleway";
+// Body (https://fonts.google.com/specimen/Open+Sans);
+$family2: "Open Sans";
+
+$weightSmall: 400;
+$weightLarge:  700;
+
 *{
     color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $family2;
 }
 .page-container{
-    background: darkblue;
-    .page-content{
-        max-width: 90rem;
+    position: relative;
+    background-color: $darkBlueFooter;
+    height: 100%;
+    .underlay{
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 1000px;
+        background-color: $darkBlueMain;
+    }
+    .page-content{
+        position: relative;
+        max-width: 80.25rem;
+        width: 100%;
+
+    }
+}
+.big-logo{
+    width: 8.75rem;
+}
+.small-logo{
+    width: 6rem;
+}
+
+.nav{
+    a{
+        text-decoration: none;
     }
 }
 .hero{
@@ -85,6 +149,7 @@
     width: 100%;
     max-width: 39.063rem;
     padding: 0 4rem !important;
+    
     .row{
         .col{
 
