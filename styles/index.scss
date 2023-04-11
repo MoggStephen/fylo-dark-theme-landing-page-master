@@ -12,6 +12,8 @@ $darkBlueFooter : hsl(216, 53%, 9%);
 //testimonials background
 $darkBlue : hsl(219, 30%, 18%);
 
+//hsl(218, 28%, 13%)
+
 // ACCENT 
 
 //inside call-to-action gradient
@@ -33,6 +35,7 @@ $family2: "Open Sans";
 $weightSmall: 400;
 $weightLarge:  700;
 
+body{display: none;}
 *{
     color: $white;
     margin: 0;
@@ -42,9 +45,20 @@ $weightLarge:  700;
 }
 .page-container{
     position: relative;
-    background-color: $darkBlueFooter;    
-    .underlay{
-        /*UNDERLAY*/
+    background-color: $darkBlueFooter;
+    .above-underlay{
+        position: absolute;
+
+        width: 100%;
+        background-color: $darkBlueIntroAndEmail;
+    }
+    .img-underlay{
+        position: absolute;
+
+        width: 100%;
+    }
+    .below-underlay{
+        /*BELOW UNDERLAY*/
         position: absolute;
         top: 0;
         left: 0;
