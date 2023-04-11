@@ -1,11 +1,11 @@
+//CHANGE underlay height
 function handleLoadAndResize(){
     const earlyAccessBackground = document.querySelector(".background");
     const underlay = document.querySelector(".underlay");
 
     const height = earlyAccessBackground.offsetTop;
-    console.log(height.toString())
     
-    underlay.style.height = height + "px";
+    underlay.style.height = (height-10) + "px";
 }
 
 window.addEventListener('load', handleLoadAndResize);
